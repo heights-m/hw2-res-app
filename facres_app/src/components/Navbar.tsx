@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-      <nav className="navbar navbar-expand-md bg-dark py-3 m-4 navbar-dark">
+      <nav className="navbar navbar-expand-md bg-dark m-4 navbar-dark">
         <div className="container-fluid">
           <a href="index.html" id="navbar-home" className="ms-3">
             <Link to="/">
@@ -21,21 +21,21 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse flex justify-content-center navbar-collapse container-fluid align-items-center">
-            <ul className="navbar-nav">
-                <li className="nav-item">
+          <div className="collapse flex justify-content-center navbar-collapse container-fluid align-items-center" id="navbarSupportedContent">
+            <ul className="navbar-nav flex align-items-center">
+                <li className="nav-item m-2">
                     <Link to="/facil-list" className="nav-link">Facility List</Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item m-2">
                     <Link to="/reservation" className="nav-link">Reservation</Link>
                 </li>
-                <li className="nav-item dropdown">
-                    <a href="#" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                <li className="nav-item dropdown m-2">
+                    <a href="#" className="nav-link dropdown-toggle text-center" role="button" data-bs-toggle="dropdown">
                       User
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                          <Link to="/user-res-his" className="dropdown-item">Reservation History</Link>
+                          <Link to="/user-res-his" className="dropdown-item ">Reservation History</Link>
                       </li>
                       <li>
                           <Link to="/user-info" className="dropdown-item">My Information</Link>
@@ -44,6 +44,7 @@ function Navbar() {
                 </li>
             </ul>
           </div>
+          <img src="/src/assets/user.png" alt="user icon" id="user_icon" className="me-3 d-none d-lg-inline d-xl-inline d-md-inline"/>
         </div>
       </nav>
   );

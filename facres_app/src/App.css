@@ -1,3 +1,7 @@
 #root {
-  background-color: rgb(243, 243, 255);
+  background-color: rgb(216, 212, 241);
+}
+
+#user_icon {
+  width: 30px;
 }
