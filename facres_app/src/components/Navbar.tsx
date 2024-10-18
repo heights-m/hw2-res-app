@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
       <nav className="navbar navbar-expand-md bg-dark py-3 m-4 navbar-dark">
         <div className="container-fluid">
-          <a href="index.html" id="navbar-home" >
-            <svg className="mr-3" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+          <a href="index.html" id="navbar-home" className="ms-3">
+            <Link to="/">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
+            </Link>
           </a>
           <button
             className="navbar-toggler"
@@ -22,19 +24,28 @@ function Navbar() {
           <div className="collapse flex justify-content-center navbar-collapse container-fluid align-items-center">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a href="#" className="nav- text-light">Facility List</a>
+                    <Link to="/facil-list" className="nav-link">Facility List</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav- text-light">Reservation</a>
+                    <Link to="/reservation" className="nav-link">Reservation</Link>
                 </li>
-                <li className="nav-item">
-                    <a href="#" className="nav- text-light">Facility List</a>
+                <li className="nav-item dropdown">
+                    <a href="#" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                      User
+                    </a>
+                    <ul className="dropdown-menu">
+                      <li>
+                          <Link to="/user-res-his" className="dropdown-item">Reservation History</Link>
+                      </li>
+                      <li>
+                          <Link to="/user-info" className="dropdown-item">My Information</Link>
+                      </li>
+                    </ul>
                 </li>
             </ul>
           </div>
         </div>
       </nav>
-    </>
   );
 }
 
