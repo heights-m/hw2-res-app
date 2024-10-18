@@ -3,13 +3,10 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-md bg-dark-subtle py-3">
+      <nav className="navbar navbar-expand-md bg-dark py-3 m-4 navbar-dark">
         <div className="container-fluid">
-          <a href="index.html" id="navbar-home">
-            <img
-              src="src/assets/home_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-              alt="home"
-            />
+          <a href="index.html" id="navbar-home" >
+            <svg className="mr-3" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
           </a>
           <button
             className="navbar-toggler"
@@ -22,16 +19,16 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav me-auto ">
+          <div className="collapse flex justify-content-center navbar-collapse container-fluid align-items-center">
+            <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a href="#" className="nav-link">Facility List</a>
+                    <a href="#" className="nav- text-light">Facility List</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">Facility List</a>
+                    <a href="#" className="nav- text-light">Reservation</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">Facility List</a>
+                    <a href="#" className="nav- text-light">Facility List</a>
                 </li>
             </ul>
           </div>
