@@ -1,0 +1,9 @@
+#fac_card{
+    width: 48%;
+}
+
+@media screen and (max-width: 650px) {
+    #fac_card {
+        width: 90%;
+    }
+}
