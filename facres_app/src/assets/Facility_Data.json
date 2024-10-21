@@ -2,7 +2,8 @@
     {
         "Name": "Gym",
         "Desc": "A place used for physical activity",
-        "Days": [true, true, true, true, true, true, true],
+        "Days": "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
+        "DaysData": [true, true, true, true, true, true, true],
         "Participants": [1, 5],
         "Location": "A101",
         "Available": "Available to all",
@@ -13,7 +14,8 @@
     {
         "Name": "Auditorium",
         "Desc": "A place for large events",
-        "Days": [false, false, true, true, true, true, false],
+        "Days": "Mon, Tue, Wed, Thu",
+        "DaysData": [false, false, true, true, true, true, false],
         "Participants": [10, 40],
         "Location": "A234",
         "Available": "Available to all",
@@ -23,7 +25,8 @@
     {
         "Name": "Swimming Pool",
         "Desc": "A place for physical activity",
-        "Days": [true, true, false, false, false, false, false],
+        "Days": "Sat, Sun",
+        "DaysData": [true, true, false, false, false, false, false],
         "Participants": [1, 8],
         "Location": "B403",
         "Available": "Available to all",
@@ -34,7 +37,8 @@
     {
         "Name": "Seminar Room",
         "Desc": "A place for large meetings",
-        "Days": [false, false, true, false, true, false, true],
+        "Days":"Mon, Wed, Fri",
+        "DaysData": [false, false, true, false, true, false, true],
         "Participants": [10, 20],
         "Location": "B253",
         "Available": "Available to all",
@@ -46,7 +50,8 @@
     {
         "Name": "Conference Room",
         "Desc": "A place for small but important meetings ",
-        "Days": [false, false, true, true, true, true, true],
+        "Days":"Mon, Tue, Wed, Thu, Fri",
+        "DaysData": [false, false, true, true, true, true, true],
         "Participants": [1, 10],
         "Location": "C1033",
         "Available": "Only for SUNY Korea",
@@ -57,10 +62,11 @@
     {
         "Name": "Library",
         "Desc": "A quiet place",
-        "Days": [true, true, true, true, true, true, true],
+        "Days":"Mon, Tue, Wed, Thu, Fri, Sat, Sun",
+        "DaysData": [true, true, true, true, true, true, true],
         "Participants": [1, 20],
         "Location": "A1011",
-        "Available": "Only for SUNY Korea",
+        "Available": "Only for SUSNY Korea",
         "AvailBool": false,
         "Img": "src/assets/library.jpg"
     }
