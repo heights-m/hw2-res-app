@@ -1,0 +1,67 @@
+[
+    {
+        "Name": "Gym",
+        "Desc": "A place used for physical activity",
+        "Days": [true, true, true, true, true, true, true],
+        "Participants": [1, 5],
+        "Location": "A101",
+        "Available": "Available to all",
+        "AvailBool": true,
+        "Img": "src/assets/gym.jpg"
+    },
+
+    {
+        "Name": "Auditorium",
+        "Desc": "A place for large events",
+        "Days": [false, false, true, true, true, true, false],
+        "Participants": [10, 40],
+        "Location": "A234",
+        "Available": "Available to all",
+        "AvailBool": true,
+        "Img": "src/assets/auditorium.jpg"
+    },
+    {
+        "Name": "Swimming Pool",
+        "Desc": "A place for physical activity",
+        "Days": [true, true, false, false, false, false, false],
+        "Participants": [1, 8],
+        "Location": "B403",
+        "Available": "Available to all",
+        "AvailBool": true,
+        "Img": "src/assets/pool.jpg"
+    },
+
+    {
+        "Name": "Seminar Room",
+        "Desc": "A place for large meetings",
+        "Days": [false, false, true, false, true, false, true],
+        "Participants": [10, 20],
+        "Location": "B253",
+        "Available": "Available to all",
+        "AvailBool": true,
+        "Img": "src/assets/seminar.jpg"
+    },
+
+
+    {
+        "Name": "Conference Room",
+        "Desc": "A place for small but important meetings ",
+        "Days": [false, false, true, true, true, true, true],
+        "Participants": [1, 10],
+        "Location": "C1033",
+        "Available": "Only for SUNY Korea",
+        "AvailBool": false,
+        "Img": "src/assets/conference.jpg"
+    },
+
+    {
+        "Name": "Library",
+        "Desc": "A quiet place",
+        "Days": [true, true, true, true, true, true, true],
+        "Participants": [1, 20],
+        "Location": "A1011",
+        "Available": "Only for SUNY Korea",
+        "AvailBool": false,
+        "Img": "src/assets/library.jpg"
+    }
+]
