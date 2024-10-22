@@ -18,7 +18,7 @@ function Reservation() {
         <option value="5">Library</option>
       </select>
       <div className='d-flex justify-content-left my-3 bg-white bg-opacity-50 rounded-4'>
-        <img src={FacData[Number(selectedFac)].Img} alt="Current facility" className='rounded-4 w-75'/>
+        <img src={FacData[Number(selectedFac)].Img} alt="Current facility" className='rounded-4 w-50'/>
         <div className='ms-3 mt-2'>
           <h2>{FacData[Number(selectedFac)].Name}</h2>
           <p>{FacData[Number(selectedFac)].Desc}</p>
@@ -32,8 +32,9 @@ function Reservation() {
           <p>{FacData[Number(selectedFac)].Available}</p>
         </div>
       </div>
+      <form action="#">
 
-
+      </form>
     </div>
   )
 }
