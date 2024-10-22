@@ -2,9 +2,15 @@
     width: 48%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 995px) {
     #fac_card {
-        width: 90%;
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #fac_card {
+        width: 80%;
     }
 }
 

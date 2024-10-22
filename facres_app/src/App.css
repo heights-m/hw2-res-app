@@ -1,5 +1,7 @@
 #root {
   background-color: rgb(216, 212, 241);
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 #user_icon {

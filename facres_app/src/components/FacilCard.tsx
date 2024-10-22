@@ -14,7 +14,7 @@ interface Props {
 
 function FacilCard({facName, desc, days, particip, location, avail, imgSrc} : Props) {
   return (
-    <div className='bg-white p-3 rounded flex justify-content-center align-items-center m-2' id='fac_card'>
+    <div className='bg-white p-3 rounded flex justify-content-center align-items-center mx-2 mb-3' id='fac_card'>
         <img src={imgSrc} alt="" className='rounded w-100 mb-4' id='fac_card_img'/>
         <div id='fac_card_details' className=''>
             <h3>{facName}</h3>
