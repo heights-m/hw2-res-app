@@ -6,6 +6,7 @@ import FacData from '../assets/Facility_Data.json'
 function Reservation() {
 
   const [selectedFac, setSelectedFac] = useState('0');
+  const [inputDate, setInputeDate] = useState();
 
   return (
     <div className='px-5 py-2'>
@@ -33,7 +34,25 @@ function Reservation() {
         </div>
       </div>
       <form action="#">
-
+        <label htmlFor="datetbu">Date to be Used:</label>
+        <input type="date" className='form-control' required/>
+        <div className='mt-2'>
+          <label htmlFor="numppl">Number of People:</label>
+          <input type="number" name="numppl" id="numppl" className='form-control' />
+        </div>
+        <div className="form-check form-check-inline mt-2">
+          <input type="radio" className='form-check-input' name='afil' id='afil-yes' required/>
+          <label htmlFor="afil-yes">SUNY Korea</label>
+        </div>
+        <div className="form-check form-check-inline">
+          <input type="radio" className='form-check-input' name='afil' id='afil-no'/>
+          <label htmlFor="afil-no">Non-SUNY Korea</label>
+        </div>
+        <div className='mt-2'>
+          <label htmlFor="purpose">Purpose of Use:</label>
+          <textarea name="purpose" id="purpose" className='form-control'></textarea>
+        </div>
+        <button type='submit' className='btn my-3 btn-primary'>Submit</button>
       </form>
     </div>
   )
