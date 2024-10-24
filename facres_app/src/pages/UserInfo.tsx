@@ -65,7 +65,7 @@ function UserInfo() {
       <p className='ms-2'>John Doe</p>
     </div>
     
-    <button type='button' className='btn btn-outline-dark' data-bs-toggle='modal' data-bs-target='#name_modal'>Change Name</button>
+    <button type='button' className='btn btn-outline-dark mb-4' data-bs-toggle='modal' data-bs-target='#name_modal'>Change Name</button>
       
       <div className="modal fade" id="name_modal" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog">
